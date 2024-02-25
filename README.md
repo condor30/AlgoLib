@@ -13,7 +13,7 @@ ALGOLIB is a simple python application for managing algorithms. It provides a us
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/algolib.git
+   git clone https://github.com/condor30/AlgoLib.git
    cd algolib
 
 2. **Install Dependencies:**
