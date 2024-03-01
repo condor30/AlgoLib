@@ -1,5 +1,6 @@
 # app.py
 import json
+import hashlib  # Import the hashlib library
 from CTkMessagebox import CTkMessagebox
 import customtkinter as ctk
 from my_frame import MyFrame
@@ -77,7 +78,27 @@ class App(ctk.CTk):
         except FileNotFoundError:
             passwords = {}
 
-        return passwords.get("admin_password") == entered_password
+        # Hash the entered password using SHA-256
+        entered_password_hash = hashlib.sha256(entered_password.encode()).hexdigest()
+
+        # Compare the hashed password with the stored hash value
+        return passwords.get("admin_password") == entered_password_hash
+
+    def update_password(self, new_password):
+        """Met à jour le mot de passe dans le fichier JSON avec le hachage."""
+        # Hash the new password using SHA-256
+        new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
+
+        # Load the existing JSON data
+        with open('passwords.json', 'r') as json_file:
+            data = json.load(json_file)
+
+        # Update the hashed password
+        data['admin_password'] = new_password_hash
+
+        # Write the updated data back to the JSON file
+        with open('passwords.json', 'w') as json_file:
+            json.dump(data, json_file)
 
     def user_interface(self):
         """Interface utilisateur."""
@@ -91,7 +112,7 @@ class App(ctk.CTk):
         search_bar.grid(row=0, column=0, columnspan=2, pady=10, padx=10, sticky="we")
 
         # Bouton à côté de la barre de recherche
-        self.mode = ctk.CTkButton(user_interface, text="MODE", width=100, command=self.return_to_main_page)  # Ajustez la valeur de width selon vos besoins
+        self.mode = ctk.CTkButton(user_interface, text="MODE", width=100, command=self.return_to_main_page)
         self.mode.grid(row=0, column=2, pady=10, padx=10, sticky="w")
 
         # Champ de texte à droite, occupant le reste de la page
@@ -186,19 +207,6 @@ class App(ctk.CTk):
             password_window.destroy()
         else:
             CTkMessagebox(title="Warning", message="Please enter a new password.")
-
-    def update_password(self, new_password):
-        """Met à jour le mot de passe dans le fichier JSON."""
-        # Load the existing JSON data
-        with open('passwords.json', 'r') as json_file:
-            data = json.load(json_file)
-
-        # Update the password
-        data['admin_password'] = new_password
-
-        # Write the updated data back to the JSON file
-        with open('passwords.json', 'w') as json_file:
-            json.dump(data, json_file)
 
     def add_algorithm(self):
         """Ajoute un algorithme."""
