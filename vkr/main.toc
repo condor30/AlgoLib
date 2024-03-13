@@ -1,0 +1,31 @@
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\contentsline {section}{ВВЕДЕНИЕ}{8}{section*.5}%
+\contentsline {section}{\numberline {1}Анализ предметной области}{10}{section.1}%
+\contentsline {subsection}{\numberline {1.1}История развития алгоритмических библиотек}{10}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Техническое задание}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Основание для разработки}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Цель и назначение разработки}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Описание алгоритмической библиотеки}{11}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Функциональные элементы}{12}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Требования пользователя к интерфейсу алгоритмической библиотеки}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Моделирование вариантов использования}{14}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Диаграмма прецедентов}{14}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Сценарии прецедентов программы}{15}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Требования к оформлению документации}{17}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Технический проект}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Общая характеристика организации решения задачи}{18}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Описание используемых библеотек и языков программирования}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Технические детали проекта}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Интерфейс редактора}{18}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Структура проекта}{18}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Диаграмма классов}{18}{subsubsection.3.4.1}%
+\contentsline {section}{\numberline {4}Рабочий проект}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Классы, используемые для разработки редактора}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Системное тестирование алгоритмической библиотеки .}{21}{subsection.4.2}%
+\contentsline {section}{ЗАКЛЮЧЕНИЕ}{23}{section*.12}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{23}{Item.27}%
+\contentsline {section}{ПРИЛОЖЕНИЕ А\ Фрагменты исходного кода программы}{25}{section*.14}%
