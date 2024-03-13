@@ -1,4 +1,4 @@
-
+import os
 import json
 import customtkinter as ctk
 
@@ -10,8 +10,14 @@ class MyFrame(ctk.CTkScrollableFrame):
         super().__init__(master, **kwargs)
         self.textbox = textbox 
         
+        # Get the directory of the current script
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        
+        # Construct the full path to 'algorithms.json'
+        algorithms_file_path = os.path.join(current_directory, "algorithms.json")
+
         # Ajouter des widgets dans le cadre...
-        with open("algorithms.json", "r") as file:
+        with open(algorithms_file_path, "r") as file:
             self.all_algorithms = json.load(file).get("algorithms", [])
         
         self.filtered_algorithms = self.all_algorithms  # Initialisez avec tous les algorithmes
